@@ -1,0 +1,703 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ul a{
+    font-size: 19px !important;
+    font-family: "Indie Flower" !important;
+       
+}
+
+
+#foot21{
+    border-top: 1px solid black;
+}
+
+.navb a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    margin-left: 14px;
+    font-weight: 500;
+}
+
+.navb a:hover{
+    font-size: 23px;
+    color: black;
+    position: relative;
+}
+
+
+
+.card h5{
+    font-weight: bold;
+}
+
+.titulo{
+    margin-bottom: 30px;
+}
+
+.contenido-textos{
+    margin-top: 14px;
+    
+}
+
+.contenido-textos h3{
+    margin-top: 10px;
+    font-family: "Indie Flower";
+}
+
+.card p{
+    font-size: 17px;
+}
+
+.conteiner {
+    position: relative;
+}
+
+.conteiner .loader {
+    width: 100px;
+    height: 100px;
+    border: solid 5px #064555;
+    border-top: solid 5px #7cd6ec;
+    border-radius: 50%;
+    animation: loader .2s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.conteiner .message {
+    position: absolute;
+    color: #7cd6ec;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: message 8s alternate infinite ease-in-out;
+}
+
+@keyframes message {
+    0% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1 ;
+    }
+}
+
+.conteiner {
+    background: linear-gradient(to right, #f2994a, #6ab48f, #56ccf2); /* Fondo degradado */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    clip-path: circle(70.7% at 50% 50%);
+    transition: clip-path 1s ease-in-out;
+}
+
+.conteiner2 {
+    clip-path: circle(0.0% at 100% 0);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower';
+}
+
+
+
+
+.imagen-about-us{
+    border-radius: 7%;
+}
+
+
+
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.p1{
+    font-size: 20px;
+    
+}
+
+
+
+.servicio-ind p{
+
+   font-size: 18px;
+    border-bottom: none;
+    padding: 12px;
+}
+
+.logo{ height: 240px;}
+
+
+
+
+    nav {
+        background: linear-gradient(to right, #f2994a, #6ab48f, #56ccf2); /* Fondo degradado */
+    
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+
+
+.textos-header h1{
+    font-size: 60px;
+    color:#fff;
+}
+
+
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+
+
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+/*  Our team */
+
+.about-services{
+    
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width:900px){
+
+
+
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+  
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    #grado3,#segundo-grado{
+        margin-top: 20px;
+      }
+
+      .boton-rojo{
+        margin-top: 10px;
+      }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Indie Flower"
+}
+
+body {
+    
+    background-color:#eee;
+}
+
+#cartas {
+    min-height: 100vh;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin: 0px
+}
+
+.card {
+    width: 280px;
+    height: 520px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden
+}
+
+.card .backgroundEffect {
+    bottom: 0;
+    height: 0px;
+    width: 100%
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
+
+.card .pic {
+    position: relative
+}
+
+.card .pic img {
+    width: 100%;
+    height: 221px;
+    object-fit: cover
+}
+
+.card .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 70px;
+    background: #1b9ce3;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    transition: all ease
+}
+
+
+
+.card .date .day {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.card .date .month,
+.card .date .year {
+    font-size: 13px
+}
+
+.card .text-muted {
+    font-size: 12px
+}
+
+
+
+.card .content {
+    padding: 0 20px
+}
+
+.card .content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #1b9ce3;
+    border-radius: 25px;
+    font-size: 15px;
+    border: none
+}
+
+.card:hover .content .btn {
+    background: #1b9ce3;
+    box-shadow: #0000001a 0px 3px 5px;
+    font-size: 21px;
+}
+
+
+.card .content .btn .fas {
+    font-size: 19px;
+    padding-left: 5px
+}
+
+.card .content .foot .admin {
+    color: #1b9ce3;
+    font-size: 12px
+}
+
+
+
+.card .content .foot .icon {
+    font-size: 18px
+}
+
+#description{
+    font-size: 15.6px;
+    font-weight: bold;
+}
+
+#text-sup{
+    font-size: 15.9;
+    font-weight: bold;
+}
+
+span.pink {
+    background: #0dcaf0;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+
+  }
+
+  #iconos{
+    color: black;
+  }
+
+  #segundo-grado{
+    background: orange;
+    outline: none;
+    border: none;
+    color: white;
+  }
+
+header li ul a{
+    font-weight: normal !important;
+    font-size: 18px !important;
+     
+  }
+
+  header li ul{
+    font-weight: normal;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+  
+
+
+  .boton-verde{
+    background: rgb(7, 185, 34) !important;
+    border: none !important;
+  }
+
+  .boton-verde:hover{
+    background: #16961a !important;
+  }
+
+
+  .boton-naranja{
+    background: #ff9000 !important;
+    border: none !important;
+  }
+
+  .boton-naranja:hover{
+    background: #dc5c05 !important;
+  }
+
+
+  .boton-rojo{
+    background: #c21d17 !important;
+    border: none !important;
+  }
+
+  .boton-rojo:hover{
+    background: #c20000 !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .contenedor-p button{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 21px !important;
+    font-family: "Indie Flower" !important;
+    font-weight: 500;
+    
+  }
+
+  .contenedor-p button:hover{
+font-size: 23px !important;
+  }
+
+  .navegacion ul a{
+    color:black;
+  }
+
+  .navegacion ul{
+    color: black;
+  }
+
+
+  .popup h3{
+    color: black;
+  }
+
+  .popup h4{
+    color: black;
+  }
+
+.navb{
+
+    width: 100%;
+    text-align: center;
+}
+
+.exit{
+
+    background-color: #16961a;
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+.contenedor-p {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+    z-index: 100000000000000000 !important;
+}
+
+.contenedor-p article {
+	line-height: 28px;
+}
+
+.contenedor-p article h1 {
+	font-size: 30px;
+	text-align: left;
+	padding: 50px 0;
+}
+
+.contenedor-p article p {
+	margin-bottom: 20px;
+}
+
+.contenedor-p article .btn-abrir-popup {
+
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+header{
+    background: linear-gradient(to right, #f2994a, #6ab48f, #56ccf2);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.boton-cerrar a{
+/* font-weight:bold ; */
+font-size: 18px;
+}

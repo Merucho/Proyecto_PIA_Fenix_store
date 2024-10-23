@@ -1,0 +1,224 @@
+<?php
+session_start(); // Inicia la sesión
+$nombreUsuario = isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Invitado'; // Cambia 'nombre' por el nombre del campo que usas
+
+// Puedes agregar lógica adicional para redirigir si el usuario no está autenticado
+if ($nombreUsuario === 'Invitado') {
+    header("Location: log.html"); // Redirige a la página de inicio de sesión si no está autenticado
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/perro.jpg.png">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42c08df73c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+  <title>Fénix Store</title>
+  <style>
+    body {
+      padding-top: 70px; /* Espacio para que el contenido no se superponga al header */
+    }
+
+    .footer-content {
+      text-align: center; /* Centrar el contenido del pie de página */
+    }
+
+    .nav-link {
+      color: black; /* Cambiar el color de los enlaces a negro */
+      font-weight: bold; /* Poner los enlaces en negrita */
+    }
+
+    .nav {
+      display: flex; /* Alinear los elementos en una fila */
+      justify-content: center; /* Centrar los elementos */
+    }
+
+    /* Estilos para centrar el contenido de la sección about-services */
+    .about-services {
+      text-align: center; /* Centrar texto */
+    }
+
+    .servicio-cont {
+      display: flex;
+      justify-content: center; /* Centrar los elementos hijos */
+      flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    }
+
+    .servicio-ind {
+      margin: 15px; /* Espaciado entre servicios */
+      flex: 1 1 300px; /* Permitir que los elementos tengan un tamaño mínimo */
+      max-width: 300px; /* Ancho máximo */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <header class="p-3 bg-dark text-white fixed-top">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="home1.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="img/perro.jpg.png" class="bi me-2" width="55" height="55" role="img" aria-label="Logo-AF"></img>          </a>
+
+            <li class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <ul class="fa-solid fa-house" id="icon"><a href="home1.html" class="nav-link px-2 text-light">Inicio</a>
+              </ul>
+              <ul class="fa-solid fa-cart-shopping" id="icon"><a href="catalogo2.html"
+                  class="nav-link px-2 text-white">Catálogo</a></ul>
+                  <ul class="fa-solid fa-phone" id="icon"><a target="_blank" href="https://api.whatsapp.com/send/?phone=573145030510&text=asigna tu cita"
+                    class="nav-link px-2 text-white">Citas</a></ul>
+              <ul class="fa-solid fa-star" id="icon"><a href="recomendaciones.html"
+                  class="nav-link px-2 text-white">Ofertas</a></ul>
+                  <ul class="fa-solid fa-user"><a href="nosotros.html"
+                    class="nav-link px-2 text-white">Nosotros</a></ul>
+              
+            </li>
+          <i class="fa-light fa-cart-circle-arrow-down"></i>
+          <div>
+            <button type="button" class="btn btn-info"><a href="log.html"
+                style="text-decoration: none; color: rgb(7, 7, 8);">
+                Iniciar Sesión</a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="contenedor sobre-nosotros" style="padding-top:80px;">
+      <h2 class="titulo"><b>Tienda virtual Fénix Store</b></h2>
+      <div class="contenedor-sobre-nosotros">
+        <img src="img/main_page.jpg" alt="" class="imagen-about-us">
+        <div class="contenido-textos">
+          <h3 class=""><span class="pink" style="color:white ;">1</span><b>¿Qué ofrecemos?</b></h3>
+          <p class="p1">
+            Uno de nuestros servicios a ofrecer es la atención a los padres/acudientes, estamos especializados mayormente en la venta de productos escolares, pero también podemos atender a alumnos, contamos con herramientas de nivel básico e intermedio para el cuidado de sus artículos. Atendemos situaciones como:
+            Productos que no llegan, envíos tardados, y cualquier problema que se tenga:
+          </p>
+          <p class="p1">Productos que no llegan, envíos tardados, y cualquier problema que se tenga.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="cartas">
+      <div class="d-lg-flex">
+        <div class="card border-0 me-lg-4 mb-lg-0 mb-4" id="carta1">
+          <div class="backgroundEffect"></div>
+          <div class="pic"> <img class="" src="img/cuidados.jpg" alt="">
+            <div class="date"> <span class="day">XX</span> <span class="month">Agosto</span> <span
+                class="year">2022</span>
+            </div>
+          </div>
+          <div class="content">
+            <p class="h-1 mt-4" id="text-sup"><b>Ofertas</b></p>
+            <p class="text-muted mt-3" id="description">Aquí encontrarás distintas promociones y paquetes de productos para el inicio del año escolar!</p>
+            <a href="recomendaciones.html" class="btn btn-danger" style="position:absolute; bottom: 10px;">¡Vamos!</a></p>
+            <div class="d-flex align-items-center justify-content-between mt-3 pb-3"></div>
+          </div>
+        </div>
+        <div class="card border-0 me-lg-4 mb-lg-0 mb-4" id="carta2">
+          <div class="backgroundEffect"></div>
+          <div class="pic"> <img class="" src="img/felix.jpg" alt="">
+            <div class="date"> <span class="day">XX</span> <span class="month">Agosto</span> <span
+                class="year">2022</span>
+            </div>
+          </div>
+          <div class="content">
+            <p class="h-1 mt-4" id="text-sup"><b>Nuestra institución</b></p>
+            <p class="text-muted mt-3" id="description">Conoce la institución, Félix De Bedout y lo que ofrecemos </p>
+            <a href="https://www.iefelixdebedoutmoreno.edu.co/" class="btn btn-danger" style="position:absolute; bottom: 10px;">¡Click aquí!</a></p>
+            <div class="d-flex align-items-center justify-content-between mt-3 pb-3"></div>
+          </div>
+        </div>
+        <div class="card border-0 mb-lg-0 mb-4" id="carta3">
+          <div class="backgroundEffect"></div>
+          <div class="pic"> <img class="" src="img/utiles.jpg" alt="">
+            <div class="date"> <span class="day">XX</span> <span class="month">Agosto</span> <span
+                class="year">2022</span>
+            </div>
+          </div>
+          <div class="content">
+            <p class="h-1 mt-4" id="text-sup"><b>Catálogo</b></p>
+            <p class="text-muted mt-3" id="description">Aquí vas a poder ver nuestro catálogo de productos,
+              podrás ver una foto del producto, su precio y una breve descripción del mismo,
+              ¿Qué esperas?
+            </p>
+            <a href="catalogo2.html" class="btn btn-danger" style="position:absolute; bottom: 10px;">¡Compra Ya!</a></p>
+            <div class="d-flex align-items-center justify-content-between mt-3 pb-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-services">
+      <div class="contenedor">
+        <h2 class="titulo"><b>Servicios y Productos</b></h2>
+        <div class="servicio-cont">
+          <div class="servicio-ind">
+            <h3>Productos</h3>
+            <p>Ofrecemos productos de calidad a precios competitivos, ademas de vendedores confiables para el bienestar de tus hijos.</p>
+          </div>
+          <div class="servicio-ind">
+            <h3>¿Quienes somos?</h3>
+            <p>Somos un pequeño emprendimiento situado en el barrio Tejelo, que busca implementar este sitio web a nivel metropolitano para impulsar nuestro emprendimiento escolar.</p>
+          </div>
+          <div class="servicio-ind">
+            <h3>Atención al cliente</h3>
+            <p>Estamos disponibles para resolver cualquier inquietud que tengas, Nuestro equipo está aquí para ayudarte a encontrar lo que necesitas..</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-light py-3 mt-auto" style="background-color: #212529b0;">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Imagen a la izquierda -->
+        <div>
+          <img src="img\pascual_logo.png" alt="Pascual Logo" style="width: 200px; height: 100px;">
+        </div>
+    
+        <div class="footer-content text-center">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="https://api.whatsapp.com/send/?phone=573145030510&amp;text" class="nav-link px-2 text-light">WhatsApp</a></li>
+            <li class="nav-item"><a href="https://www.google.com/intl/es-419/gmail/about/" class="nav-link px-2 text-light">Correo Electrónico</a></li>
+            <li class="nav-item"><a href="https://www.google.com/maps/place/Pesebre" class="nav-link px-2 text-light">Ubícanos</a></li>
+          </ul>
+          <p>© 2024 Fénix Store. Todos los derechos reservados.</p>
+        </div>
+    
+        <!-- Imagen a la derecha -->
+        <div>
+          <img src="img\IE_felix_logo.png" alt="IE Felix Logo" style="width: 150px; height: auto;">
+        </div>
+      </div>
+    </footer>  
+  
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz4fnFO9gyb4dU2pYV1G6k+Z9vG0O1z1l8D3gg5nH7H5X96LV6G1OdbmVf"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+  integrity="sha384-4T8RFHnZlFrjLz9VRHj5s0bWl6hKPSF0yU4eyN3CE46JHOBGJfxZ2mGJl1R+l7K1" crossorigin="anonymous"></script>
+
+  <div class="conteiner" id="conteiner">
+    <div class="loader"></div>
+    <p class="message">Cargando..</p>
+  </div>
+  <script src="js/paginafull.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

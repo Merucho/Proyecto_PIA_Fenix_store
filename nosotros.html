@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/perro.jpg.png">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42c08df73c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+  <title>Fénix Store</title>
+  <style>
+    body {
+      padding-top: 70px; /* Espacio para que el contenido no se superponga al header */
+    }
+
+    .footer-content {
+      text-align: center; /* Centrar el contenido del pie de página */
+    }
+
+    .nav-link {
+      color: black; /* Cambiar el color de los enlaces a negro */
+      font-weight: bold; /* Poner los enlaces en negrita */
+    }
+
+    .nav {
+      display: flex; /* Alinear los elementos en una fila */
+      justify-content: center; /* Centrar los elementos */
+    }
+
+    .nosotros-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .nosotros-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .nosotros-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .card-persona {
+      margin: 15px;
+      max-width: 300px;
+      flex: 1;
+    }
+
+    .card img {
+      width: 100%;
+      height: 350px; /* Altura fija para las imágenes */
+      object-fit: cover; /* Ajustar la imagen sin distorsión */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <header class="p-3 bg-dark text-white fixed-top">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="home1.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="img/perro.jpg.png" class="bi me-2" width="55" height="55" role="img" aria-label="Logo-AF"></img>
+          </a>
+
+          <li class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="fa-solid fa-house" id="icon"><a href="home1.html" class="nav-link px-2 text-light">Inicio</a></ul>
+            <ul class="fa-solid fa-cart-shopping" id="icon"><a href="catalogo2.html" class="nav-link px-2 text-white">Catálogo</a></ul>
+            <ul class="fa-solid fa-phone" id="icon"><a target="_blank" href="https://api.whatsapp.com/send/?phone=573145030510&text=asigna tu cita" class="nav-link px-2 text-white">Citas</a></ul>
+            <ul class="fa-solid fa-star" id="icon"><a href="recomendaciones.html" class="nav-link px-2 text-white">Ofertas</a></ul>
+            <ul class="fa-solid fa-user"><a href="nosotros.html" class="nav-link px-2 text-white">Nosotros</a></ul>
+          </li>
+          <div>
+            <button type="button" class="btn btn-info"><a href="log.html" style="text-decoration: none; color: rgb(7, 7, 8);">Iniciar Sesión</a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nueva sección "Nosotros" con las tarjetas -->
+    <section class="nosotros-section">
+        <h2>Nosotros</h2>
+        <div class="d-flex justify-content-center flex-wrap">
+          <div class="card card-persona">
+            <img src="img/Marianna.jpg" alt="Persona 1">
+            <div class="card-body">
+              <h3 class="card-title">Marianna Rico Rivera</h3>
+              <h4>T.I  1033724139</h4>
+              <h4>+57 318 2999482</h4>
+            </div>
+          </div>
+  
+          <div class="card card-persona">
+            <img src="img/Valery.jpg" alt="Persona 2">
+            <div class="card-body">
+              <h3 class="card-title">Valery Valentina Hoyos</h3>
+              <h4>T.I 1018237828</h4>
+              <h4>+57 310 5202468</h4>
+            </div>
+          </div>
+  
+          <div class="card card-persona">
+            <img src="img/Darien.jpg" alt="Persona 3">
+            <div class="card-body">
+              <h3 class="card-title">Darien Jose Arrieta</h3>
+              <h4>T.I  </h4>
+              <h4>+57 301 6106829</h4>
+            </div>
+          </div>
+  
+          <div class="card card-persona">
+            <img src="img/Mateo.jpg" alt="Persona 4">
+            <div class="card-body">
+              <h3 class="card-title">Mateo Pelaez Moreno</h3>
+              <h4>T.I 1036451351 </h4>
+              <h4>+57 321 9862526</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <footer class="text-light py-3 mt-auto" style="background-color: #212529b0;">
+        <div class="container d-flex justify-content-between align-items-center">
+          <!-- Imagen a la izquierda -->
+          <div>
+            <img src="img\pascual_logo.png" alt="Pascual Logo" style="width: 200px; height: 100px;">
+          </div>
+      
+          <div class="footer-content text-center">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="https://api.whatsapp.com/send/?phone=573145030510&amp;text" class="nav-link px-2 text-light">WhatsApp</a></li>
+              <li class="nav-item"><a href="https://www.google.com/intl/es-419/gmail/about/" class="nav-link px-2 text-light">Correo Electrónico</a></li>
+              <li class="nav-item"><a href="https://www.google.com/maps/place/Pesebre" class="nav-link px-2 text-light">Ubícanos</a></li>
+            </ul>
+            <p>© 2024 Fénix Store. Todos los derechos reservados.</p>
+          </div>
+      
+          <!-- Imagen a la derecha -->
+          <div>
+            <img src="img\IE_felix_logo.png" alt="IE Felix Logo" style="width: 150px; height: auto;">
+          </div>
+        </div>
+      </footer> 
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gyb4dU2pYV1G6k+Z9vG0O1z1l8D3gg5nH7H5X96LV6G1OdbmVf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-4T8RFHnZlFrjLz9VRHj5s0bWl6hKPSF0yU4eyN3CE46JHOBGJfxZ2mGJl1R+l7K1" crossorigin="anonymous"></script>
+  
+    <div class="conteiner" id="conteiner">
+      <div class="loader"></div>
+      <p class="message">Cargando..</p>
+    </div>
+    <script src="js/paginafull.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+  </body>
+  
+  </html>
+  

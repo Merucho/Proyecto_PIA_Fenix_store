@@ -1,0 +1,194 @@
+*{
+    font-family: 'Alegreya Sans SC'
+}
+
+.conteiner {
+    position: relative;
+}
+
+.conteiner .loader {
+    width: 100px;
+    height: 100px;
+    border: solid 5px #064555;
+    border-top: solid 5px #7cd6ec;
+    border-radius: 50%;
+    animation: loader .8s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.conteiner .message {
+    position: absolute;
+    color: #7cd6ec;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: message 4s alternate infinite ease-in-out;
+}
+
+@keyframes message {
+    0% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1 ;
+    }
+}
+
+  .conteiner{
+    background: linear-gradient(to right, #f2994a, #6ab48f, #56ccf2); /* Fondo degradado */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    clip-path: circle(70.7% at 50% 50%);
+    transition: clip-path 1s ease-in-out ;
+
+}
+
+.conteiner2{
+    clip-path: circle(0.0% at 100% 0);
+}
+
+
+#container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+   background-color: #bdffff;
+   background-color: rgba(196, 235, 255, 0.712);
+    margin-top: 50px;
+    padding: 20px;
+    border: 4px solid #000;
+    outline: 3px solid #F0F2F0;
+    /*border-radius: 10%;*/
+    border-radius: 5%;
+}
+
+
+
+.form-img{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    order: 2;
+}
+.form-img img{
+    width: 90%;
+    margin: auto;    
+}
+
+.form_input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #007b00;
+    border-bottom: 3px solid #92e27a;
+    border-bottom: 3px solid #b5bac9;
+    background: transparent;
+    color: black;
+    font-size: 19px;
+}
+
+.form_input:focus{
+  background: linear-gradient(to bottom, transparent,#6cbdfc);
+  outline: none;
+  border-bottom: 3px solid #ffff;
+}
+
+form textarea{
+    min-height: 140px;
+    resize: none;
+}
+
+.img-container{
+    margin: auto;   
+}
+
+.form-img div{
+    padding: 10px;
+}
+
+.img-container div {
+    border-radius: 50%; 
+    text-align: center;
+    padding: 40px;
+}
+
+::placeholder{
+    font-size: 20px;
+    color: black;
+}
+
+form input[type="submit"] {
+
+    background-color: #178d1f;
+    border-bottom: none;
+    padding: 12px;
+    color: white;
+}
+
+form input[type="submit"]:hover {
+
+    background-color: #007b00;
+    border-bottom: none;
+    padding: 12px;
+}
+
+form input[type="submit"]:focus {
+
+    background:#2ab933;
+}
+
+/*form input[type="submit"]:active {
+
+    background: linear-gradient(to bottom, #072, #050);
+}*/
+
+form{
+    order: 5 !important;
+}
+
+
+
+  header{
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#list-footer a{
+    
+    font-family: "Alegreya Sans SC";
+}
+
+#foot{
+    border-top: 1px solid black;
+    margin-top: 80px;
+}
+#icon{
+    text-align: center;
+  }
+  ul a{
+    font-family: "Alegreya Sans SC";
+    font-weight: normal !important;
+  }
+
+
