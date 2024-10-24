@@ -6,10 +6,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Método POST recibido"; // Verifica si se llega a este punto
 
     // Obtén los datos del formulario
-    $nombre = $_POST['nombre']; // Cambiado de validationDefault01 a nombre
+    $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
     $correo = $_POST['correo'];
-    $contraseña = $_POST['contraseña'];
+    $contraseña = $_POST['contraseña']; // Sin encriptar
     $confirmar_contraseña = $_POST['confirmar_contraseña'];
 
     // Validar que las contraseñas coincidan
@@ -18,12 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit; // Termina el script si las contraseñas no coinciden
     }
 
-    // Encriptar la contraseña
-    $contraseña = password_hash($contraseña, PASSWORD_DEFAULT);
-
     // Preparar y ejecutar la consulta
     $stmt = $conn->prepare("INSERT INTO usuarios (nombre, apellido, correo, contraseña) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $nombre, $apellido, $correo, $contraseña);
+    $stmt->bind_param("ssss", $nombre, $apellido, $correo, $contraseña); // Se guarda la contraseña sin encriptar
 
     if ($stmt->execute()) {
         // Iniciar sesión y establecer un mensaje
