@@ -1,4 +1,4 @@
-Esta es la version final del projecto PIA: Fénix Store
+Esta es la version final del proyecto PIA: Fénix Store
 
 Integrantes del equipo:
 
