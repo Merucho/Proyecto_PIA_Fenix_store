@@ -2,10 +2,10 @@ Esta es la version final del projecto PIA: Fénix Store
 
 Integrantes del equipo:
 
-Valery Valentina Hoyos Lizarda      T.I  1018237828
+Valery Valentina Hoyos Lizarda     
 
-Mateo Pelaez Moreno                 T.I  1036451351
+Mateo Pelaez Moreno                
 
-Marianna Rico Rivera                T.I  1033724139
+Marianna Rico Rivera                
 
-Darien Jose Arrieta Sanchez         T.I  1043673662
+Darien Jose Arrieta Sanchez         
